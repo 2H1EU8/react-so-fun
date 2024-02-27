@@ -4,7 +4,7 @@
 
 ## TIMELINE:
 
-- August 28 - 30
+- Feb 27 - Mar 26
 
 ## TARGET:
 
@@ -26,7 +26,10 @@
 - React Router
 - Fake API with JSON server
 
+## MATERIAL
 
+- [Design](https://www.figma.com/file/ZPgFdwvWDqtTRTgzkCnLIO/Core---Dashboard-Builder-(Copy)?type=design&mode=design&t=cKRIPMZ34EWABulE-0)
+- [Plan](https://docs.google.com/document/d/1cqB4JCtrgkh43WvqIy3KzZSpKn708bhamOFBk_4_hGU/edit?usp=sharing)
 
 ## SOURCE CODE
 
