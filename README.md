@@ -24,7 +24,7 @@
 - Unit testing with Jest and React Testing Library
 - React Query
 - React Router
-- Fake API with JSON server
+- Fake API with Strapi
 
 ## MATERIAL
 
@@ -41,30 +41,20 @@
 - Install the dependencies and devDependencies and start the server.
 
 ```sh
-cd react-so-fun
-npm i
-touch .env
-```
-Config .env
-```
-VITE_API_ENDPOINT=http://localhost:3000
+cd react-so-fun/BE
+npm install
+
+npm run develop
 ```
 
-Run Json-server
-```sh
-cd react-so-fun
-json-server --watch db.json
-
-Resources
-  http://localhost:3000/products
-
-  Home
-  http://localhost:3000
-```
 Run FE
 ```sh
+cd react-so-fun/FE
+npm install
 
 npm run dev
 
+
 Local:   http://localhost:5173/
 ```
+
