@@ -1,12 +1,15 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { Button } from '../../../components/common/Button';
 import { ButtonType } from '../../../enums/enum';
+import { action } from '@storybook/addon-actions';
+import { fn } from '@storybook/test';
 
 
 
 const meta = {
   title: 'Common/Button',
   component: Button,
+  args: { handleClick: fn() },
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
     layout: 'centered',
@@ -17,7 +20,8 @@ const meta = {
   argTypes: {
     theme: { control: 'inline-radio', options: ['primary', 'secondary', 'success', 'warning', 'error'] },
     disabled: {control: 'inline-radio', options: [true, false]},
-  },
+    handleClick: action('on-click'),
+  },                        
 } satisfies Meta<typeof Button>;
 
 export default meta;
