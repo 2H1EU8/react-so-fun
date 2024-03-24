@@ -1,11 +1,13 @@
 {
   "env": {
     "browser": true,
-    "es2021": true
+    "es2021": true,
+    "jest/globals": true
   },
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
+    "plugin:jest/recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:react-hooks/recommended",
     "plugin:prettier/recommended"
@@ -22,13 +24,25 @@
     "react",
     "react-refresh",
     "react-hooks",
-    "@typescript-eslint"
+    "@typescript-eslint",
+    "jest"
   ],
   "rules": {
     "react-refresh/only-export-components": [
       "warn",
       {
         "allowConstantExport": true
+      }
+    ],
+    "no-underscore-dangle": 0,
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "always",
+        "jsx": "always",
+        "ts": "always",
+        "tsx": "always"
       }
     ]
   },
